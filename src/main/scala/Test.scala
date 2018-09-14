@@ -1,7 +1,7 @@
 
 object Test extends App { 
 implicit  val imp= "Inject" 
-   printVal[String]();
+   println(new Array(3).mkString(" ").toString)
   
   def printVal[T]()(implicit imp : T) {
     var list = List(1, 2, 3, 4, 5, 6, 7, 8, 9, 0, -12)
